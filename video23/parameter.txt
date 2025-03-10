@@ -1,0 +1,95 @@
+1) function with parameters
+
+import java.util.Scanner;
+class Coding
+{
+  void soap(int money1)
+  { 
+    System.out.println(money1);
+    System.out.println("Soap is purchased");
+
+  }
+
+  void chocolate(int money2)
+  {
+    System.out.println(money2);
+    System.out.println("Chocolate is purchased");
+  }
+
+  public static void main(String args[])
+  {
+     Scanner store=new Scanner(System.in);
+     System.out.println("Enter the money for soap :");
+     int a=store.nextInt();
+     System.out.println("Enter the money for chocolate");
+     int b=store.nextInt();
+     Coding kadai=new Coding();
+     kadai.soap(a);
+     kadai.chocolate(b);
+  
+  }
+}
+
+
+2)creating a calculator
+import java.util.Scanner;
+class Coding
+{
+  public static void main(String args[])
+  {
+    Scanner cal = new Scanner(System.in);
+    System.out.println("Enter the value of num1:");
+    int a=cal.nextInt();
+    System.out.println("Enter the value of num2:");
+    int b=cal.nextInt();
+    System.out.println("Enter the option 1-add , 2-sub , 3-mul , 4-divid");
+    int c=cal.nextInt();
+    Coding rr=new Coding();
+
+    if(c==1)
+    {
+       rr.add(a,b);
+    }
+    else if(c==2)
+    {
+
+      rr.sub(a,b);
+    }
+    else if(c==3)
+    {
+      rr.mul(a,b);
+    }
+    else if(c==4)
+    {
+      rr.divid(a,b);
+    }
+    else
+    {
+      System.out.println("chain broken");
+    }
+    
+  }
+
+  void add(int a,int b)
+  {
+    System.out.println("addition= "+(a+b));
+  }
+
+    void sub(int a,int b)
+  {
+    System.out.println("subraction= "+(a-b));
+  }
+
+    void mul(int a,int b)
+  {
+    System.out.println("multiplication= "+(a*b));
+  }
+
+    void divid(int a,int b)
+  {
+    System.out.println("division= "+(a/b));
+  }
+  
+  
+  
+}

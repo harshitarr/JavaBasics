@@ -1,0 +1,146 @@
+1)single inheritance
+
+package inheritance;
+
+
+class animal{
+	void eat()
+	{
+		System.out.println("this animal can eat");   // super class
+		
+	}
+	
+}
+class dog extends animal
+{
+	void bark()
+	{
+		System.out.println("this animal can bark");   //derived class
+	}
+}
+public class MainClass {
+
+	public static void main(String[] args) {
+		dog b=new dog();
+		
+		b.bark();
+		b.eat(); //only u can call the function inside the class
+		
+
+	}
+
+}
+
+
+2) multi level inheritance
+
+
+package inheritance;
+
+
+class A {
+	int one=1;
+
+}
+class B extends A // by this way we can accses both A and B
+{
+	int two=2;
+}
+
+class c extends B// it access b and b over there access A and hence C is able to access a
+
+{
+	int three=3;
+}
+public class MainClass {
+
+	public static void main(String[] args) {
+		c meow=new c();
+		
+		System.out.println(meow.two);
+		System.out.println(meow.one);
+		System.out.println(meow.three);
+		
+
+	}
+
+}
+
+3) hierarchy inheritance
+
+
+package inheritance;
+
+
+class A {          // single main class
+	int one=1;
+
+}
+class B extends A // subclass no 1
+{
+	int two=2;
+}
+
+class c extends A// subclass no 2
+
+{
+	int three=3;
+}
+public class MainClass {
+
+	public static void main(String[] args) {
+		c meow=new c();
+		
+		
+		System.out.println(meow.one);
+		System.out.println(meow.three);
+		
+
+	}
+
+}
+
+
+4) hybrid inheritance
+
+package inheritance;
+
+
+class A {          // single main class
+	int one=1;
+
+}
+class B extends A // subclass no 1
+{
+	int two=2;
+}
+
+class c extends A// subclass no 2 // hierarchy
+
+{
+	int three=3;
+}
+
+class D extends B// multiclass
+
+{
+	int four=4;
+}
+
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		c meow=new c();
+		
+		
+		System.out.println(meow.one);
+		System.out.println(meow.three);
+		
+
+	}
+
+}
+
+
+

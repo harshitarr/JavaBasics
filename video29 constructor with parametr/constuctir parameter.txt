@@ -1,0 +1,52 @@
+1)
+package meoww;
+
+public class punaiii {
+     
+    int a;
+    String b;
+    
+    punaiii(int c)  // constructor
+    {
+     System.out.println("Hello word");	
+     System.out.println(c);
+    }
+	public static void main(String[] args) {
+		punaiii obj1=new punaiii(10);
+		
+		
+		
+
+	}
+
+}
+
+
+2) two constructore r created and differentiated using parameter
+
+package meoww;
+
+public class punaiii {
+     
+    int a;
+    String b;
+    punaiii()
+    {
+    	System.out.println("simlply");
+    }
+    
+    punaiii(int c)  // constructor
+    {
+     System.out.println("Hello word");	
+     System.out.println(c);
+    }
+	public static void main(String[] args) {
+		punaiii obj1=new punaiii(10);
+		punaiii obj2=new punaiii();
+		
+		
+		
+
+	}
+
+}

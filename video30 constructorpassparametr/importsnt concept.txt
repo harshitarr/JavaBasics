@@ -1,0 +1,26 @@
+1) assigning values through constructors
+
+package meoww;
+
+public class punaiii {
+     
+int number;
+String name;
+
+punaiii(int a,String b){
+	number=a;
+	name=b;
+	
+	
+}
+
+	public static void main(String[] args) {
+		
+		punaiii obj=new punaiii(2,"meow");
+		System.out.println(obj.number);
+		
+	}
+
+}
+
+

@@ -1,0 +1,27 @@
+1) return phone and name 
+
+import java.util.Scanner;
+class Coding
+{
+
+
+  String name()
+  {
+    return "abinav";
+  }
+  long number()
+  {
+    return 9787616123L;
+  }
+  public static void main(String args[])
+  {
+
+  Coding object=new Coding();
+  String myname=object.name();
+  System.out.println("the entered name us : "+myname);
+  long phone=object.number();
+  System.out.println("Phone number is : "+phone);
+  
+  
+}
+}

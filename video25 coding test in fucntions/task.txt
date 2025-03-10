@@ -1,0 +1,73 @@
+1) odd or even
+
+import java.util.Scanner;
+class Find
+{
+
+  void oddoreven(int a)
+  {
+    if(a%2==0)
+    {
+      System.out.print("the given input is even");
+    }
+    else
+    {
+      System.out.print("the given input is odd");
+    }
+  }
+  public static void main(String args[])
+  {
+
+    Scanner num=new Scanner(System.in);
+    System.out.print("Enter the number: ");
+    int a=num.nextInt();
+    Find obj=new Find();
+    obj.oddoreven(a);
+
+
+  }
+
+
+  
+  
+  
+}
+
+2) pass or fail with return
+
+import java.util.Scanner;
+class Find
+{
+
+   String mark(int a)
+  {
+    if(a>=34)
+    {
+      return "passed";
+    }
+    else
+    {
+      return "fail";
+    }
+  }
+  public static void main(String args[])
+  {
+
+    Scanner num=new Scanner(System.in);
+    System.out.print("Enter the mark");
+    int a=num.nextInt();
+    Find obj=new Find();
+    String result=obj.mark(a);
+    System.out.println(result);
+
+
+  }
+
+
+  
+  
+  
+}
+
+
+

@@ -1,0 +1,49 @@
+1) calling a function in two different ways
+
+import java.util.Scanner;
+class Coding
+{
+
+  void greeting()
+  {
+    System.out.println("vanakam");
+    exit();                           // method 1
+  }
+
+  void exit()
+  {
+    System.out.println("exit");
+  }
+  public static void main(String args[])
+ {
+   Coding objective=new Coding();
+   objective.greeting();             // method2
+
+ } 
+}
+
+
+2) create a class called addition where input a and b are given then call sum function where it addds both
+
+
+import java.util.Scanner;
+class Coding
+{
+
+  
+    int a=10;
+    int b=20;
+    
+  
+
+  void sum()
+  {
+    
+    System.out.println("addition: "+(a+b));
+  }
+  public static void main(String args[])
+ {
+   Coding objective=new Coding();
+   objective.sum();
+ } 
+}

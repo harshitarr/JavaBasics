@@ -1,0 +1,49 @@
+1)
+package java2;
+
+class Meow
+{
+	String name;
+}
+
+public class teacher {
+
+	public static void main(String[] args) {
+		
+		Meow obj=new Meow();
+		obj.name="leela";
+		System.out.println(obj.name);
+
+	}
+
+}
+
+
+2)
+
+how to access the properties of other classes
+
+
+package inheritance;
+
+
+class Dad
+{
+	int money=2000;
+}
+
+class son extends Dad{
+	
+}
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		son s1=new son();
+		System.out.println(s1.money);
+		
+
+	}
+
+}
+// what is the error in this code 
